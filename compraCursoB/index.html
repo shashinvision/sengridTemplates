@@ -83,6 +83,9 @@
         border-radius: 50px;
         width: 32px;
       }
+      .footerIcons {
+        margin: 0 auto;
+      }
       @media (max-width: 414px) {
         .flex-container {
           display: block;
@@ -103,6 +106,12 @@
         }
         .options {
           margin: 10px 0;
+        }
+        .footerIcons {
+          display: block;
+        }
+        .footerIcons b {
+          display: block;
         }
       }
     </style>
@@ -207,7 +216,7 @@
             </p>
           </div>
           <div class="options">
-            <div style="display: flex; line-height: 2px">
+            <div style="display: flex; line-height: 0.8rem">
               <span
                 ><img src="pencil.svg" alt="" srcset="" class="icon"
               /></span>
@@ -221,7 +230,7 @@
             </p>
           </div>
           <div class="options">
-            <div style="display: flex; line-height: 2px">
+            <div style="display: flex; line-height: 0.5rem">
               <span><img src="drive.svg" alt="" srcset="" class="icon" /></span>
               <p class="txtWidth" style="margin-left: 10px">
                 AGENDAMIENTO DE CLASES PRÁCTICAS
@@ -249,7 +258,7 @@
         style="background-color: white; padding: 22px 34px; margin-top: 10px"
       >
         <div class="options">
-          <div style="display: flex; line-height: 2px">
+          <div style="display: flex; line-height: 0.5rem">
             <span><img src="phone.svg" alt="" srcset="" class="icon" /></span>
             <p style="margin-left: 10px">CONTACTO</p>
           </div>
@@ -293,14 +302,25 @@
           align-items: center;
         "
       >
-      <div style="margin: 0 auto; ">
-        <span><b>¡Únete a nuestra comunidad!</b></span>
-        <span><img class="icons" src="./facebookIcon.svg" alt="" /></span>
-        <span><img class="icons" src="./instagramIcon.svg" alt="" /></span>
-        <span><img class="icons" src="./twiterIcon.svg" alt="" /></span>
-        <span><img class="icons" src="./linkedinIcon.svg" alt="" /></span>
+        <div class="footerIcons">
+          <b style="line-height: 42px">¡Únete a nuestra comunidad!</b>
+          <img class="icons" src="./facebookIcon.svg" alt="" />
+          <img class="icons" src="./instagramIcon.svg" alt="" />
+          <img class="icons" src="./twiterIcon.svg" alt="" />
+          <img class="icons" src="./linkedinIcon.svg" alt="" />
+        </div>
       </div>
-      </div>
+      <footer
+        style="
+          text-align: center;
+          font-weight: 100;
+          margin-bottom: 50px;
+          color: #8b8b8b;
+        "
+      >
+        <p>automovilclub.cl | 600 464 4040</p>
+        <i>Somos expertos en movilidad</i>
+      </footer>
     </div>
   </body>
 </html>
