@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenida M</title>
+    <style>
+      body {
+        font-family: "Avenir";
+        font-style: normal;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        background: #ededed;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      #topBar {
+        width: 100%;
+        margin-bottom: 34px;
+        background: #ffd500;
+      }
+      #card {
+        background-image: url(edificio.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 10px;
+        margin-bottom: -14px;
+        height: 12rem;
+      }
+      .cardImg {
+        position: sticky;
+        top: 90%;
+        width: 15rem;
+        left: 58%;
+      }
+      .contentCard {
+        margin: 0 auto;
+        border-radius: 8px 8px 8px 8px;
+      }
+      .content {
+        padding-top: 15px;
+      }
+      #logo {
+        margin-top: 10px;
+        width: 150px;
+      }
+      .welcomeText {
+        margin-top: 5%;
+        float: left;
+        margin-left: 10%;
+      }
+      .clearFix {
+        float: none;
+        clear: both;
+        overflow: auto;
+      }
+      .centralBar {
+        color: white;
+      }
+      .txtCurso {
+        font-weight: 100;
+        font-size: 14px;
+      }
+      .flex-container > p.txtCurso {
+        margin: 0 auto;
+        padding: 18px 0;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      .icon {
+        background-color: #ffd500;
+        border-radius: 50px;
+        width: 32px;
+      }
+      @media (max-width: 414px) {
+        .flex-container {
+          display: block;
+        }
+        .cardImg {
+          width: 10rem;
+        }
+        .txtCurso {
+          text-align: center;
+          margin: 0 auto;
+        }
+        .txtWidth {
+          font-size: 10px;
+        }
+        .flex-container > p.txtCurso {
+          margin: 0 auto;
+          padding: 2px 0;
+        }
+        .options {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topBar">
+      <img id="logo" src="./logo.png" alt="" srcset="" />
+    </div>
+    <div class="container">
+      <div class="contentCard" style="background-color: white">
+        <div class="content">
+          <div id="card">
+            <b class="welcomeText">
+              Bienvenido xxxxxxxxxxxxxxxxxx <br />
+              a la escuela de conductores más grande de Chile!
+            </b>
+            <img src="card.svg" alt="" class="cardImg" srcset="" />
+          </div>
+          <div class="clearFix"></div>
+          <div
+            style="
+              background-color: #ffd500;
+              height: 7vh;
+              border-radius: 0px 0px 8px 8px;
+            "
+          >
+            <p style="font-size: 14px; padding-top: 15px; text-align: center">
+              ¡Nos encanta tenerte con nosotros para recorer este camino!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="centralBar">
+        <div
+          style="
+            background-color: #1663cf;
+            height: 50px;
+            border-radius: 8px 8px 0px 0px;
+          "
+        >
+          <p
+            style="
+              font-size: 14px;
+              padding-top: 18px;
+              text-align: center;
+              position: relative;
+            "
+          >
+            ¡Tu curso está por comenzar!
+            <img
+              src="./iconBell.svg"
+              alt=""
+              srcset=""
+              style="
+                width: 24px;
+                margin-left: 5px;
+                position: absolute;
+                top: 14px;
+              "
+            />
+          </p>
+        </div>
+        <div
+          style="
+            background-color: #297df2;
+            height: auto;
+            border-radius: 0px 0px 8px 8px;
+          "
+        >
+          <div class="flex-container" style="margin: 0 auto; width: 80%">
+            <p class="txtCurso"><b>Día: </b> Lunes 05 de julio del 2022</p>
+            <p class="txtCurso"><b>Hora: </b> 10:00 a 10:30 hrs</p>
+            <p class="txtCurso"><b>Lugar: </b> Zoom</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="contentCard"
+        style="background-color: #ffd500; padding: 7px 0 0 0; margin-top: 10px"
+      >
+        <div
+          class="contentCard"
+          style="background-color: white; padding: 22px 34px"
+        >
+          <div class="options">
+            <div style="display: flex; line-height: 2px">
+              <span><img src="lens.svg" alt="" srcset="" class="icon" /></span>
+              <p style="margin-left: 10px">PASOS A SEGUIR</p>
+            </div>
+            <p class="txtCurso" style="text-align: justify">
+              El curso completo consta de <b
+                >5 clases teóricas vía online en vivo y en directo, exámen
+                psicotécnico y 12 clases prácticas</b
+              >
+              en la sede que hayas elegido. El día anterior al inicio de tu
+              curso te enviaremos un correo con el link y un manual para que
+              comiences tus clases teóricas con instrucciones para el ingreso a
+              nuestra plataforma. Además, en las próximas 24 hrs hábiles te
+              haremos llegar la ficha de inscripción y boleta por la compra de
+              curso.
+            </p>
+          </div>
+          <div class="options">
+            <div style="display: flex; line-height: 2px">
+              <span
+                ><img src="pencil.svg" alt="" srcset="" class="icon"
+              /></span>
+              <p style="margin-left: 10px">CONDICIONES DE USO</p>
+            </div>
+            <p class="txtCurso" style="text-align: justify">
+              Las clases teóricas serán impartidas vía streaming a través
+              de ZOOM, y contarás con el soporte de nuestra plataforma Mi Curso
+              B para poder respaldar los contenidos. Es un requisito aprobar el
+              psicotécnico antes de iniciar tus clases prácticas.
+            </p>
+          </div>
+          <div class="options">
+            <div style="display: flex; line-height: 2px">
+              <span><img src="drive.svg" alt="" srcset="" class="icon" /></span>
+              <p class="txtWidth" style="margin-left: 10px">
+                AGENDAMIENTO DE CLASES PRÁCTICAS
+              </p>
+            </div>
+            <p class="txtCurso" style="text-align: justify">
+              Una vez aprobada la totalidad del curso teórico, debes acercarte a
+              la sucursal donde estás matriculado para realizar el test
+              psicotécnico, cuando tengas aprobada esta evaluación estarás
+              completamente en condiciones para agendar tus clases prácticas. Te
+              pedimos que te acerques a nuestra sede con tu cédula de identidad
+              y el certificado de estudios que acredite el egreso de escuela
+              básica o superior.
+              <br />
+              <b>
+                *Recuerda que si tienes 17 años debes llevar un poder simple
+                autorizado por tu apoderado
+              </b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div
+        class="contentCard"
+        style="background-color: white; padding: 22px 34px"
+      >
+        <div class="options">
+          <div style="display: flex; line-height: 2px">
+            <span><img src="phone.svg" alt="" srcset="" class="icon" /></span>
+            <p style="margin-left: 10px">CONTACTO</p>
+          </div>
+          <p class="txtCurso" style="text-align: justify">
+            En el caso de tener consultas nos puedes llamar al 600 464 4040 de 9
+            a 18 horas para resolverlas o llenando tus datos en el siguiente
+            link: https://www.automovilclub.cl/contacto donde nuestro equipo te
+            contactara a la brevedad posible. Además tus dudas más frecuentes
+            las puedes encontrar en el siguiente link donde te brindaremos todas
+            las respuestas sobre nuestro curso.
+            <br />
+            <br />
+            http://www.automovillcub.cl/preguntasfrecuentesejemplo
+            <br />
+            <br />
+            *Los horarios de clases prácticas están sujetos a disponibilidad.
+            Conexión de Banda ancha estable. Esto no es excluyente, pero es lo
+            ideal para un buen funcionamiento de la plataforma.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
