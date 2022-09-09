@@ -41,6 +41,13 @@
         margin: 0 auto;
         border-radius: 8px 8px 8px 8px;
       }
+      .circleIcon {
+        background-color: #f25d29 !important;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        margin-right: 20px;
+      }
       .content {
         padding-top: 15px;
       }
@@ -156,12 +163,16 @@
           padding: 7px 0 0 0;
           margin-top: 10px;
           border-radius: 0;
-          height:auto;
+          height: auto;
         "
       >
-        <div style="text-align: center;position: relative;" >
-          <img src="./exlamation.svg" class="icons" style="padding-top: 0; margin: 0 auto;position: absolute;"/>
-          <span style="color: white;margin-left: 26px;">MUY IMPORTANTE</span>
+        <div style="text-align: center; position: relative">
+          <img
+            src="./exlamation.svg"
+            class="icons"
+            style="padding-top: 0; margin: 0 auto; position: absolute"
+          />
+          <span style="color: white; margin-left: 26px">MUY IMPORTANTE</span>
         </div>
         <div
           class="contentCard"
@@ -173,18 +184,30 @@
           "
         >
           <div class="options">
-            <div style="display: flex; line-height: 0.8rem">
-              <span
-                ><img src="pencil.svg" alt="" srcset="" class="icon"
-              /></span>
-              <p style="margin-left: 10px">CONDICIONES DE USO</p>
+            <div style="display: flex; line-height: 0.8rem;align-items: center;">
+              <p class="circleIcon">1</p>
+              <p class="txtCurso" style="text-align: justify">
+                En este correo te adjuntamos la
+                <b>boleta de tu compra y ficha de inscripción.</b>
+              </p>
             </div>
-            <p class="txtCurso" style="text-align: justify">
-              Las clases teóricas serán impartidas vía streaming a través
-              de ZOOM, y contarás con el soporte de nuestra plataforma Mi Curso
-              B para poder respaldar los contenidos. Es un requisito aprobar el
-              psicotécnico antes de iniciar tus clases prácticas.
-            </p>
+            <div style="display: flex; line-height: 0.8rem;align-items: center;">
+              <p class="circleIcon">2</p>
+              <span class="txtCurso" style="text-align: justify">
+                Para nosotros es de suma importancia que
+                <b>revises tus datos ingresados</b> puesto que ellos serán
+                nuestras vías de contacto en los próximos días.
+              </span>
+            </div>
+            <div style="display: flex; line-height: 0.8rem;align-items: center;">
+              <p class="circleIcon">3</p>
+              <span class="txtCurso" style="text-align: justify">
+                Además te pedimos que
+                <b>leas las condiciones de nuestro curso B</b>
+                las cuales las encontrarás en tu ficha de inscripción en la hoja
+                2.
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -239,7 +262,7 @@
         <div class="options">
           <div style="display: flex; line-height: 0.5rem">
             <span><img src="phone.svg" alt="" srcset="" class="icon" /></span>
-            <p style="margin-left: 10px">CONTACTO</p>
+            <p style="margin-left: 10px">Contáctanos</p>
           </div>
           <p class="txtCurso" style="text-align: justify">
             En el caso de tener consultas nos puedes llamar al 600 464 4040 de 9
@@ -259,17 +282,10 @@
               href="https://micursob.automovilclub.cl/preguntas-frecuentes/"
               >Preguntas Frecuentes</a
             >
-            <br />
-            <br />
-            *Los horarios de clases prácticas están sujetos a disponibilidad.
-            Conexión de Banda ancha estable. Esto no es excluyente, pero es lo
-            ideal para un buen funcionamiento de la plataforma.
           </p>
         </div>
       </div>
-      <div style="text-align: center; margin: 18px 0">
-        <img src="./carbono.svg" width="100px" />
-      </div>
+      <br />
       <div
         style="
           background-color: #297df2;
@@ -299,6 +315,8 @@
       >
         <p>automovilclub.cl | 600 464 4040</p>
         <i>Somos expertos en movilidad</i>
+        <br />
+        <i style="color: #29aa60">Somos Carbon Neutral - CarbonNeutral.com</i>
       </footer>
     </div>
   </body>
