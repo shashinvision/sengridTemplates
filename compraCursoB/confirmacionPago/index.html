@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenida M</title>
+    <style>
+      body {
+        font-family: "Avenir";
+        font-style: normal;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        background: #ededed;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      #topBar {
+        width: 100%;
+        margin-bottom: 34px;
+        background: #ffd500;
+      }
+      #card {
+        background-image: url(hill.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain, cover;
+        margin-top: 10px;
+        margin-bottom: -14px;
+        height: 12rem;
+      }
+      .cardImg {
+        position: sticky;
+        top: 90%;
+        width: 15rem;
+        left: 58%;
+      }
+      .contentCard {
+        margin: 0 auto;
+        border-radius: 8px 8px 8px 8px;
+      }
+      .content {
+        padding-top: 15px;
+      }
+      #logo {
+        margin-top: 10px;
+        width: 150px;
+      }
+      .welcomeText {
+        margin-top: 2%;
+        float: left;
+        margin-left: 10%;
+      }
+      .clearFix {
+        float: none;
+        clear: both;
+        overflow: auto;
+      }
+      .centralBar {
+        color: white;
+      }
+      .txtCurso {
+        font-weight: 100;
+        font-size: 14px;
+      }
+      .flex-container > p.txtCurso {
+        margin: 0 auto;
+        padding: 18px 0;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      .icons {
+        width: 22px;
+        padding-top: 10px;
+        margin-left: 20px;
+      }
+      .icon {
+        background-color: #ffd500;
+        border-radius: 50px;
+        width: 32px;
+      }
+      .footerIcons {
+        margin: 0 auto;
+      }
+      @media (max-width: 414px) {
+        .flex-container {
+          display: block;
+        }
+        .cardImg {
+          width: 6rem;
+        }
+        .txtCurso {
+          text-align: center;
+          margin: 0 auto;
+        }
+        .txtWidth {
+          font-size: 10px;
+        }
+        .flex-container > p.txtCurso {
+          margin: 0 auto;
+          padding: 2px 0;
+        }
+        .options {
+          margin: 10px 0;
+        }
+        .footerIcons {
+          display: block;
+        }
+        .footerIcons b {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topBar">
+      <img id="logo" src="./logo.png" alt="" srcset="" />
+    </div>
+    <div class="container">
+      <div class="contentCard" style="background-color: white">
+        <div class="content">
+          <div id="card">
+            <div style="width: 50%">
+              <p class="welcomeText txtCurso">
+                Hola xxxxxxxxxxxxxxxxxxxx muchas gracias por comprar tu curso B
+                con nosotros, es ahora que podemos decirte:
+              </p>
+              <div class="clearFix"></div>
+              <b class="welcomeText"
+                >¡Bienvenido a la escuela líder en conducción del país! Nos
+                alegramos que nos hayas elegido, hoy comienza un nuevo camino
+              </b>
+            </div>
+            <img src="card.svg" alt="" class="cardImg" srcset="" />
+          </div>
+          <div class="clearFix"></div>
+          <div
+            style="
+              background-color: #ffd500;
+              height: 14px;
+              margin-top: 10px;
+              border-radius: 0px 0px 8px 8px;
+            "
+          ></div>
+        </div>
+      </div>
+
+      <div
+        class="contentCard"
+        style="
+          background-color: #f25d29;
+          padding: 7px 0 0 0;
+          margin-top: 10px;
+          border-radius: 0;
+          height:auto;
+        "
+      >
+        <div style="text-align: center;position: relative;" >
+          <img src="./exlamation.svg" class="icons" style="padding-top: 0; margin: 0 auto;position: absolute;"/>
+          <span style="color: white;margin-left: 26px;">MUY IMPORTANTE</span>
+        </div>
+        <div
+          class="contentCard"
+          style="
+            background-color: white;
+            padding: 22px 34px;
+            margin-top: 10px;
+            border-radius: 0;
+          "
+        >
+          <div class="options">
+            <div style="display: flex; line-height: 0.8rem">
+              <span
+                ><img src="pencil.svg" alt="" srcset="" class="icon"
+              /></span>
+              <p style="margin-left: 10px">CONDICIONES DE USO</p>
+            </div>
+            <p class="txtCurso" style="text-align: justify">
+              Las clases teóricas serán impartidas vía streaming a través
+              de ZOOM, y contarás con el soporte de nuestra plataforma Mi Curso
+              B para poder respaldar los contenidos. Es un requisito aprobar el
+              psicotécnico antes de iniciar tus clases prácticas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="centralBar">
+        <div
+          style="
+            background-color: #1663cf;
+            height: 50px;
+            border-radius: 8px 8px 0px 0px;
+          "
+        >
+          <p
+            style="
+              font-size: 14px;
+              padding-top: 18px;
+              text-align: center;
+              position: relative;
+            "
+          >
+            ¡Ya falta poco para comenzar tus clases!
+            <img
+              src="./iconBell.svg"
+              alt=""
+              srcset=""
+              style="
+                width: 24px;
+                margin-left: 5px;
+                position: absolute;
+                top: 14px;
+              "
+            />
+          </p>
+        </div>
+        <div
+          style="
+            background-color: #297df2;
+            height: auto;
+            border-radius: 0px 0px 8px 8px;
+          "
+        >
+          <div class="flex-container" style="margin: 0 auto; width: 80%">
+            <p class="txtCurso"><b>Día: </b> Lunes 05 de julio del 2022</p>
+            <p class="txtCurso"><b>Hora: </b> 10:00 a 10:30 hrs</p>
+            <p class="txtCurso"><b>Lugar: </b> Zoom</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="contentCard"
+        style="background-color: white; padding: 22px 34px; margin-top: 10px"
+      >
+        <div class="options">
+          <div style="display: flex; line-height: 0.5rem">
+            <span><img src="phone.svg" alt="" srcset="" class="icon" /></span>
+            <p style="margin-left: 10px">CONTACTO</p>
+          </div>
+          <p class="txtCurso" style="text-align: justify">
+            En el caso de tener consultas nos puedes llamar al 600 464 4040 de 9
+            a 18 horas para resolverlas o llenando tus datos en el siguiente
+            <b>link: </b
+            ><a href="https://www.automovilclub.cl/contacto" target="_blank">
+              Contacto</a
+            >
+            donde nuestro equipo te contactara a la brevedad posible. Además tus
+            dudas más frecuentes las puedes encontrar en el siguiente link donde
+            te brindaremos todas las respuestas sobre nuestro curso.
+            <br />
+            <br />
+            <b>Link: </b>
+            <a
+              target="_blank"
+              href="https://micursob.automovilclub.cl/preguntas-frecuentes/"
+              >Preguntas Frecuentes</a
+            >
+            <br />
+            <br />
+            *Los horarios de clases prácticas están sujetos a disponibilidad.
+            Conexión de Banda ancha estable. Esto no es excluyente, pero es lo
+            ideal para un buen funcionamiento de la plataforma.
+          </p>
+        </div>
+      </div>
+      <div style="text-align: center; margin: 18px 0">
+        <img src="./carbono.svg" width="100px" />
+      </div>
+      <div
+        style="
+          background-color: #297df2;
+          height: auto;
+          margin-bottom: 18px;
+          color: white;
+          padding: 5px 0;
+          display: flex;
+          align-items: center;
+        "
+      >
+        <div class="footerIcons">
+          <b style="line-height: 42px">¡Únete a nuestra comunidad!</b>
+          <img class="icons" src="./facebookIcon.svg" alt="" />
+          <img class="icons" src="./instagramIcon.svg" alt="" />
+          <img class="icons" src="./twiterIcon.svg" alt="" />
+          <img class="icons" src="./linkedinIcon.svg" alt="" />
+        </div>
+      </div>
+      <footer
+        style="
+          text-align: center;
+          font-weight: 100;
+          margin-bottom: 50px;
+          color: #8b8b8b;
+        "
+      >
+        <p>automovilclub.cl | 600 464 4040</p>
+        <i>Somos expertos en movilidad</i>
+      </footer>
+    </div>
+  </body>
+</html>
