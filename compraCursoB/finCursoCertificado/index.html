@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenida M</title>
+    <style>
+      body {
+        font-family: "Avenir";
+        font-style: normal;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        background: #ededed;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      #topBar {
+        width: 100%;
+        margin-bottom: 34px;
+        background: #ffd500;
+      }
+      #card {
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: -14px;
+        height: 12rem;
+      }
+      .cardImg {
+        position: absolute;
+        width: 16rem;
+        margin-top: -26px;
+        right: -18px;
+      }
+      .contentCard {
+        margin: 0 auto;
+        border-radius: 8px 8px 8px 8px;
+      }
+      .circleIcon {
+        background-color: #f25d29 !important;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        margin-right: 20px;
+      }
+      .content {
+        padding: 18px;
+      }
+      #logo {
+        margin-top: 10px;
+        width: 150px;
+      }
+      .welcomeText {
+        margin-top: 2%;
+        float: left;
+        margin-left: 10%;
+      }
+      .clearFix {
+        float: none;
+        clear: both;
+        overflow: auto;
+      }
+      .centralBar {
+        color: white;
+      }
+      .txtCurso {
+        font-weight: 100;
+        font-size: 14px;
+      }
+      .flex-container > p.txtCurso {
+        margin: 0 auto;
+        padding: 18px 0;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      .icons {
+        width: 22px;
+        padding-top: 10px;
+        margin-left: 20px;
+      }
+      .icon {
+        background-color: #ffd500;
+        border-radius: 50px;
+        width: 32px;
+      }
+      .iconFinal {
+        margin-top: 15px;
+      }
+      .footerIcons {
+        margin: 0 auto;
+      }
+      .optionContainer {
+        display: flex;
+        justify-content: center;
+      }
+      .option {
+        margin: 10px;
+        background-color: #efefef;
+        border-radius: 4px;
+        width: 112px;
+        height: 122px;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+      }
+      .option > p {
+        margin-bottom: 0;
+        font-weight: 100;
+        font-size: 14px;
+      }
+      .option > img {
+        width: 48px !important;
+      }
+      .cardContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+      .btnEncuesta {
+        margin-top: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        background-color: #ffd500;
+        padding: 10px 35px;
+        border-radius: 8px;
+        box-shadow: 0px 7px 8px rgba(6, 83, 189, 0.7);
+        font-weight: 600;
+      }
+      @media only screen and (max-width: 834px) {
+        .optionContainer {
+          display: block;
+          justify-content: center;
+        }
+      }
+      @media only screen and (max-width: 414px) {
+        .iconFinal {
+          margin-top: 0;
+        }
+        .option {
+          width: 100px;
+          height: 120px;
+        }
+        .flex-container {
+          display: block;
+        }
+        .cardImg {
+          width: 9rem;
+        }
+        .txtCurso {
+          text-align: center;
+          margin: 0 auto;
+        }
+        .txtWidth {
+          font-size: 10px;
+        }
+        .flex-container > p.txtCurso {
+          margin: 0 auto;
+          padding: 2px 0;
+        }
+        .options {
+          margin: 10px 0;
+        }
+        .footerIcons {
+          display: block;
+        }
+        .footerIcons b {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topBar">
+      <img id="logo" src="./logo.png" alt="" srcset="" />
+    </div>
+    <div class="container">
+      <div class="contentCard" style="background-color: white">
+        <div class="content">
+          <div id="card" style="display: flex; align-items: center">
+            <div style="width: 70%">
+              <b class="welcomeText"
+                >xxxxxxxxxxxxxxxxxx te felicitamos por haber llegado al final de
+                este largo camino!
+              </b>
+              <p class="welcomeText txtCurso">
+                Ya eres parte de nuestra escuela de conductores y nuevamente te
+                queremos agradecer por habernos elegido!
+                <span
+                  ><img
+                    src="./cardFrontEmoji.svg"
+                    style="
+                      height: 32px;
+                      position: absolute;
+                      margin-top: -6px;
+                      margin-left: 5px;
+                    " />
+                  <img
+                    src="./handEmoji.svg"
+                    alt=""
+                    style="
+                      height: 32px;
+                      position: absolute;
+                      margin-top: -6px;
+                      margin-left: 36px;
+                    "
+                /></span>
+              </p>
+            </div>
+            <img src="womanMan.svg" alt="" class="cardImg" srcset="" />
+          </div>
+          <div class="clearFix"></div>
+        </div>
+      </div>
+      <br />
+      <div class="contentCard" style="background-color: #297df2">
+        <div class="content">
+          <p
+            class="txtCurso"
+            style="color: #fff; font-weight: 500; text-align: center"
+          >
+            Te invitamos a responder una breve encuesta para conocer tu
+            experiencia en tu curso
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a href="#" target="_blank" class="btnEncuesta"
+              >Responder encuesta</a
+            >
+          </div>
+        </div>
+        <div
+          style="
+            background-color: #fff;
+            padding: 30px;
+            margin-top: 10px;
+            border-radius: 0px 0px 8px 8px;
+          "
+        >
+          <p
+            class="txtCurso"
+            style="color: black; font-weight: 500; text-align: center"
+          >
+            En este correo podrás descargar el certificado del curso y si te
+            animas a subirlo a tus redes sociales serás un/a nuevo/a #ACCHILOVER
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a href="#" target="_blank" class="btnEncuesta"
+              >Descargar certificado</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="contentCard"
+        style="
+          background-color: #f25d29;
+          padding: 7px 0 0 0;
+          margin-top: 10px;
+          border-radius:8px 8px 0 0;
+          height: auto;
+        "
+      >
+        <div style="text-align: center; position: relative">
+          <img
+            src="./exlamation.svg"
+            class="icons"
+            style="padding-top: 0; margin: 0 auto; position: absolute"
+          />
+          <span style="color: white; margin-left: 26px">IMPORTANTE</span>
+        </div>
+        <div
+          class="contentCard"
+          style="
+            background-color: white;
+            padding: 22px 34px;
+            margin-top: 10px;
+            border-radius: 0;
+          "
+        >
+          <p class="txtCurso">
+            Si deseas coordinar el uso de nuestros vehículos para dar la prueba
+            en la municipalidad te pedimos que te acerques a nuestra sede.
+          </p>
+          <p class="txtCurso">
+            Este servicio será brindado según disponibilidad vehicular de
+            nuestra escuela
+          </p>
+        </div>
+      </div>
+      <br />
+      <div
+        style="
+          background-color: #297df2;
+          height: auto;
+          margin-bottom: 18px;
+          color: white;
+          padding: 5px 0;
+          display: flex;
+          align-items: center;
+        "
+      >
+        <div class="footerIcons">
+          <b style="line-height: 42px">¡Únete a nuestra comunidad!</b>
+          <img class="icons" src="./facebookIcon.svg" alt="" />
+          <img class="icons" src="./instagramIcon.svg" alt="" />
+          <img class="icons" src="./twiterIcon.svg" alt="" />
+          <img class="icons" src="./linkedinIcon.svg" alt="" />
+        </div>
+      </div>
+      <footer
+        style="
+          text-align: center;
+          font-weight: 100;
+          margin-bottom: 50px;
+          color: #8b8b8b;
+        "
+      >
+        <p>automovilclub.cl | 600 464 4040</p>
+        <i>Somos expertos en movilidad</i>
+        <br />
+        <i style="color: #29aa60">Somos Carbon Neutral - CarbonNeutral.com</i>
+      </footer>
+    </div>
+  </body>
+</html>
