@@ -120,6 +120,17 @@
         justify-content: center;
         margin: 0 auto;
       }
+      .btnEncuesta {
+        margin-top: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        background-color: #ffd500;
+        padding: 10px 35px;
+        border-radius: 8px;
+        box-shadow: 0px 7px 8px rgba(6, 83, 189, 0.7);
+        font-weight: 600;
+      }
       @media only screen and (max-width: 834px) {
         .optionContainer {
           display: block;
@@ -176,7 +187,7 @@
                 <b class="welcomeText">FELICITACIONES </b>
                 <img src="./partyEmoji.svg" style="width: 42px" />
               </div>
-              <span class="welcomeText txtCurso">
+              <p class="welcomeText txtCurso">
                 FELICITACIONES Aprobaste tus clases teóricas con éxito. Nos
                 alegramos mucho de que sigas avanzando en nuestro curso!
                 <span>
@@ -190,104 +201,35 @@
                     "
                   />
                 </span>
-              </span>
+              </p>
             </div>
             <img src="manOnCard.svg" alt="" class="cardImg" />
           </div>
           <div class="clearFix"></div>
         </div>
-      </div>
-
-      <div
-        class="contentCard"
-        style="
-          background-color: #f25d29;
-          padding: 7px 0 0 0;
-          margin-top: 10px;
-          border-radius: 0;
-          height: auto;
-        "
-      >
-        <div style="text-align: center; position: relative">
-          <img
-            src="./exlamation.svg"
-            class="icons"
-            style="padding-top: 0; margin: 0 auto; position: absolute"
-          />
-          <span style="color: white; margin-left: 26px">MUY IMPORTANTE</span>
-        </div>
         <div
-          class="contentCard"
           style="
-            background-color: white;
-            padding: 22px 34px;
+            background-color: #297df2;
+            padding: 30px;
             margin-top: 10px;
-            border-radius: 0;
+            border-radius: 0px 0px 8px 8px;
           "
         >
-          <div class="options">
-            <p>Te indicamos los pasos a seguir:</p>
-            <p class="txtCurso">
-              Ingresa a nuestro portal en el link
-              https://micursob.automovilclub.cl/ para que puedas:
-            </p>
-            <div class="cardContainer">
-              <div class="optionContainer">
-                <div class="option">
-                  <img src="./calendar.svg" alt="" />
-                  <p>Revisar tus horarios</p>
-                </div>
-                <div class="option">
-                  <img src="./document.svg" alt="" />
-                  <p>Descargar el contenido de las clases</p>
-                </div>
-              </div>
-              <div class="optionContainer">
-                <div class="option">
-                  <img src="./tasks.svg" alt="" />
-                  <p>Hacer los test de cada clase</p>
-                </div>
-                <div class="option">
-                  <img src="./view.svg" alt="" />
-                  <p>Dar examen teórico final</p>
-                </div>
-              </div>
-            </div>
-            <p class="txtCurso">
-              Además podrás evaluar a tu profesor (creemos que es muy importante
-              tu opinión para seguir siendo lideres).
-            </p>
+          <p
+            class="txtCurso"
+            style="color: #fff; font-weight: 500; text-align: center"
+          >
+            Te invitamos a responder una breve encuesta para conocer tu
+            experiencia en tu curso
+          </p>
+          <div style="display: flex; justify-content: center">
+            <a href="#" target="_blank" class="btnEncuesta"
+              >Responder encuesta</a
+            >
           </div>
         </div>
       </div>
-      <div
-        class="contentCard"
-        style="background-color: #f25d29; padding: 7px 0 0 0; margin-top: 10px"
-      >
-        <div
-          class="contentCard"
-          style="background-color: white; padding: 22px 34px"
-        >
-          <div class="options">
-            <p class="txtCurso" style="text-align: justify">
-              Para ingresar al portal de “Mi Curso B”, debes ingresar tu correo
-              registrado y como
-              <b
-                >clave los últimos 4 dígitos de tu RUT, esto incluye el dígito
-                verificador. Ejemplo de contraseña: RUT
-              </b>
-              12.345.678-9 Tú Clave sería 6789
-            </p>
-            <p class="txtCurso" style="text-align: justify">
-              Además de esto todos los link de accesos a las clases los
-              encontrarás en <b>micursob.automovilclub.cl</b> . Sumado a esto te
-              enviaremos un recordatorio antes de cada clase. También puedes
-              descargar el manual para utilizar Zoom en el siguiente link
-              xxxxxxxxxxxxxxxxxxxx
-            </p>
-          </div>
-        </div>
-      </div>
+
       <div
         class="contentCard"
         style="background-color: #ffd500; padding: 7px 0 0 0; margin-top: 10px"
@@ -302,13 +244,18 @@
               <b style="margin-left: 18px">Agendamiento de clases prácticas</b>
             </div>
             <p class="txtCurso" style="text-align: justify">
-              Una vez aprobada la totalidad del curso teórico, debes acercarte a
-              la sucursal donde estás matriculado para realizar el test
-              psicotécnico, cuando tengas aprobada esta evaluación estarás
-              completamente en condiciones para agendar tus clases prácticas. Te
-              pedimos que te acerques a nuestra sede con tu cédula de identidad
-              y el certificado de estudios que acredite el egreso de escuela
-              básica o superior.
+              Antes de comenzar con las clases prácticas y una vez aprobada la
+              parte teórica del curso, debes acercarte a la sede escogida para
+              <b>coordinar tu examen psicotécnico.</b>
+            </p>
+            <p class="txtCurso" style="text-align: justify">
+              Cuando tengas aprobada esta evalucación estas completamente en
+              condiciones para comenzar con tus clases prácticas. Para esto
+              debes acercarte con tu
+              <b
+                >cédula de identidad y certificado que acredite egreso de básica
+                o superior.</b
+              >
             </p>
             <p style="font-weight: 50; text-align: justify">
               *Recuerda que si tienes 17 años debes llevar un poder simple
