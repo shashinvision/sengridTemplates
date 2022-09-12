@@ -85,6 +85,9 @@
         border-radius: 50px;
         width: 32px;
       }
+      .iconFinal {
+        margin-top: 15px;
+      }
       .footerIcons {
         margin: 0 auto;
       }
@@ -97,6 +100,7 @@
         background-color: #efefef;
         border-radius: 4px;
         width: 112px;
+        height: 122px;
         padding: 20px;
         align-items: center;
         text-align: center;
@@ -115,15 +119,19 @@
         justify-content: center;
         margin: 0 auto;
       }
-      @media (max-width: 834px) {
+      @media only screen and (max-width: 834px) {
         .optionContainer {
           display: block;
           justify-content: center;
         }
       }
-      @media (max-width: 414px) {
+      @media only screen and (max-width: 414px) {
+        .iconFinal {
+          margin-top: 0;
+        }
         .option {
-          width: 60%;
+          width: 100px;
+          height: 120px;
         }
         .flex-container {
           display: block;
@@ -217,21 +225,25 @@
                   <p>Revisar tus horarios</p>
                 </div>
                 <div class="option">
-                  <img src="./calendar.svg" alt="" />
-                  <p>Revisar tus horarios</p>
+                  <img src="./document.svg" alt="" />
+                  <p>Descargar el contenido de las clases</p>
                 </div>
               </div>
               <div class="optionContainer">
                 <div class="option">
-                  <img src="./calendar.svg" alt="" />
-                  <p>Revisar tus horarios</p>
+                  <img src="./tasks.svg" alt="" />
+                  <p>Hacer los test de cada clase</p>
                 </div>
                 <div class="option">
-                  <img src="./calendar.svg" alt="" />
-                  <p>Revisar tus horarios</p>
+                  <img src="./view.svg" alt="" />
+                  <p>Dar examen teórico final</p>
                 </div>
               </div>
             </div>
+            <p class="txtCurso">
+              Además podrás evaluar a tu profesor (creemos que es muy importante
+              tu opinión para seguir siendo lideres).
+            </p>
           </div>
         </div>
       </div>
@@ -244,17 +256,22 @@
           style="background-color: white; padding: 22px 34px"
         >
           <div class="options">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-            quia. Ipsum animi reiciendis rem, voluptas odit, adipisci ipsam id
-            voluptatem architecto eius, quo repellat assumenda sint. Sequi odit
-            quam adipisci voluptatibus impedit, illo laborum quasi itaque
-            asperiores consequatur. Sed molestiae facilis aliquid, distinctio
-            quis ut qui. Cumque accusamus culpa omnis impedit recusandae nulla
-            nostrum dolore illo, nisi, a ex ratione ipsam harum ad adipisci sed
-            eius aspernatur ea deleniti iusto itaque tempore error. Placeat nam
-            harum, pariatur, hic incidunt recusandae numquam ratione deleniti at
-            sed voluptas qui dolor quidem aperiam odit rerum debitis aliquam
-            architecto et perferendis? Quae, vitae necessitatibus?
+            <p class="txtCurso" style="text-align: justify">
+              Para ingresar al portal de “Mi Curso B”, debes ingresar tu correo
+              registrado y como
+              <b
+                >clave los últimos 4 dígitos de tu RUT, esto incluye el dígito
+                verificador. Ejemplo de contraseña: RUT
+              </b>
+              12.345.678-9 Tú Clave sería 6789
+            </p>
+            <p class="txtCurso" style="text-align: justify">
+              Además de esto todos los link de accesos a las clases los
+              encontrarás en <b>micursob.automovilclub.cl</b> . Sumado a esto te
+              enviaremos un recordatorio antes de cada clase. También puedes
+              descargar el manual para utilizar Zoom en el siguiente link
+              xxxxxxxxxxxxxxxxxxxx
+            </p>
           </div>
         </div>
       </div>
@@ -267,17 +284,49 @@
           style="background-color: white; padding: 22px 34px"
         >
           <div class="options">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-            quia. Ipsum animi reiciendis rem, voluptas odit, adipisci ipsam id
-            voluptatem architecto eius, quo repellat assumenda sint. Sequi odit
-            quam adipisci voluptatibus impedit, illo laborum quasi itaque
-            asperiores consequatur. Sed molestiae facilis aliquid, distinctio
-            quis ut qui. Cumque accusamus culpa omnis impedit recusandae nulla
-            nostrum dolore illo, nisi, a ex ratione ipsam harum ad adipisci sed
-            eius aspernatur ea deleniti iusto itaque tempore error. Placeat nam
-            harum, pariatur, hic incidunt recusandae numquam ratione deleniti at
-            sed voluptas qui dolor quidem aperiam odit rerum debitis aliquam
-            architecto et perferendis? Quae, vitae necessitatibus?
+            <div style="display: flex; align-items: center">
+              <img src="./driver.svg" alt="" style="width: 42px" />
+              <b style="margin-left: 18px">Agendamiento de clases prácticas</b>
+            </div>
+            <p class="txtCurso" style="text-align: justify">
+              Una vez aprobada la totalidad del curso teórico, debes acercarte a
+              la sucursal donde estás matriculado para realizar el test
+              psicotécnico, cuando tengas aprobada esta evaluación estarás
+              completamente en condiciones para agendar tus clases prácticas. Te
+              pedimos que te acerques a nuestra sede con tu cédula de identidad
+              y el certificado de estudios que acredite el egreso de escuela
+              básica o superior.
+            </p>
+            <p style="font-weight: 50; text-align: justify">
+              *Recuerda que si tienes 17 años debes llevar un poder simple
+              autorizado por tu apoderado
+            </p>
+            <div style="display: flex">
+              <div style="margin-right: 10px">
+                <img src="./phone.svg" class="icon iconFinal" />
+              </div>
+              <div>
+                <p class="txtCurso" style="text-align: justify">
+                  En el caso de tener consultas o querer modificar información
+                  nos puedes llamar al 600 464 4040 de 9 a 18 horas para
+                  resolverlas o llenando tus datos en el siguiente link:
+                  <a
+                    href="https://www.automovilclub.cl/contacto"
+                    target="_blank"
+                    >Contacto</a
+                  >
+                  donde nuestro equipo te contactara a la brevedad posible.
+                  Además tus dudas más frecuentes las puedes encontrar en el
+                  siguiente link donde te brindaremos todas las respuestas sobre
+                  nuestro curso.
+                  <a
+                    href="http://www.automovillcub.cl/preguntasfrecuentesejemplo"
+                    target="_blank"
+                    >Preguntas Frecuentes</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
